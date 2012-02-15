@@ -23,7 +23,7 @@
 	</gap:platforms>
 
 	<icon src="images/intro.png" gap:role="default" />
-	<gap:splash src="images/intro.png" />
+	<gap:splash src="images/intro.png" width="640" height="960" />
 
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
