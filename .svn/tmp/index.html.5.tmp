@@ -233,7 +233,8 @@
     </div>
 </section>
 <script type="text/javascript">
-    $('#loadData').live('pageshow', function () {
+   // $('#loadData').live('pageshow', function () {
+   //     $.illusions.init();
        setTimeout('$.illusions.init();', 3000);
-    });
+   // });
 </script>

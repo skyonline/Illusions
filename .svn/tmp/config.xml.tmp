@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.example"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Illusions</name>
+    <description>Illusions mobile application</description>
+<<<<<<< .mine
+    <author href="https://skyname.net" email="info@skyname.net">Sky Online</author>
+=======
+    <author href="http://www.skyname.net" email="info@skyname.net">Sky Online</author>
+>>>>>>> .r66
+	<preference name="orientation" value="portrait" />
+	<gap:splash src="splash.png" />
+	<icon src="icon.png" />
+</widget>

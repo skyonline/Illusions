@@ -1,0 +1,275 @@
+/*Data load*/
+.load-data
+{
+    background: url(images/background1.png) no-repeat center center fixed;
+}
+
+.main-page
+{
+    background: url(images/background2_resize.png) no-repeat center center fixed;
+}
+
+.full-screen-background
+{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.uploader
+{
+    text-align: center;
+    margin: 25% auto;
+    font-weight: bold;
+    width: 25%;
+}
+
+#loadData .ui-widget-header
+{
+    background: #5B2881 no-repeat;
+    border: 1px solid #4A216A;
+    color: #4A216A;
+    font-weight: bold;
+}
+
+#loadData .ui-widget-content
+{
+    background: #EEE repeat-x scroll 50% 50%;
+    border: 1px solid #4A216A;
+    color: #4A216A;
+}
+
+/*======================================*/
+
+/* gallery */
+/*=====================================*/
+.gallery
+{
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery:after
+{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.gallery li
+{
+    float: left;
+}
+.gallery li a
+{
+    display: block;
+    margin: 5px;
+}
+.gallery li img
+{
+    display: block;
+}
+
+/* Home page*/
+/*=====================================*/
+
+div#mainMenu
+{
+    width: 100%;
+    padding-left: 3%;
+}
+div#mainMenu div
+{
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+div#mainMenu div img
+{
+    width: 80px;
+}
+
+.clear-fix
+{
+    clear: both;
+    width: 100%;
+}
+rd
+{
+    margin-left: 75%;
+    margin-top: 10%;
+}
+
+
+.custom-footer
+{
+    background-image: url('images/logo.png');
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Map styles*/
+/*=====================================*/
+
+#map-content
+{
+    color: #000;
+    text-shadow: none;
+}
+
+.ui-header .ui-title
+{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.ui-footer .ui-title
+{
+    margin-right: 20px;
+    margin-left: 20px;
+    white-space: normal;
+}
+.ui-btn-inner
+{
+    padding: .6em 7px;
+}
+.ui-body-e
+{
+    border: 1px solid #990099;
+    color: #fff;
+    background: #692F96;
+}
+#page-map, #map-content, #map_canvas
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+#map_canvas
+{
+    min-height: 100%;
+}
+#map_square
+{
+    height: 150px;
+    width: 100%;
+    border: 2px solid #aaa;
+}
+
+table.adp-placemark
+{
+    border: 1px solid #602b89 /*{a-bar-border}*/;
+    background: #602b89 /*{a-bar-background-color}*/;
+    color: #ffffff /*{a-bar-color}*/;
+    font-weight: bold;
+    text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #444444 /*{a-bar-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #692F96 /*{a-bar-background-start}*/), to( #56267B /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #692F96 /*{a-bar-background-start}*/, #56267B /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #692F96 /*{a-bar-background-start}*/, #56267B /*{a-bar-background-end}*/); /* FF3.6 */
+    background-image: -ms-linear-gradient( #692F96 /*{a-bar-background-start}*/, #56267B /*{a-bar-background-end}*/); /* IE10 */
+    background-image: -o-linear-gradient( #692F96 /*{a-bar-background-start}*/, #56267B /*{a-bar-background-end}*/); /* Opera 11.10+ */
+    background-image: linear-gradient( #692F96 /*{a-bar-background-start}*/, #56267B /*{a-bar-background-end}*/);
+    margin: 0px;
+    text-align: center;
+}
+
+table.adp-directions tr .adp-step, .adp-substep
+{
+    border-top: 1px solid silver;
+}
+
+table.adp-directions
+{
+    width: 100%;
+    text-align: center;
+}
+
+.adp-summary
+{
+    text-align: center;
+}
+
+table.adp-directions tr, .adp-summary
+{
+    border: 1px solid #671b64 /*{c-bup-border}*/;
+    background: #671b64 /*{c-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{c-bup-color}*/;
+    text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 1px /*{c-bup-shadow-radius}*/ #444444 /*{c-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #711D6E /*{c-bup-background-start}*/), to( #5C185A /*{c-bup-background-end}*/)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #711D6E /*{c-bup-background-start}*/, #5C185A /*{c-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #711D6E /*{c-bup-background-start}*/, #5C185A /*{c-bup-background-end}*/); /* FF3.6 */
+    background-image: -ms-linear-gradient( #711D6E /*{c-bup-background-start}*/, #5C185A /*{c-bup-background-end}*/); /* IE10 */
+    background-image: -o-linear-gradient( #711D6E /*{c-bup-background-start}*/, #5C185A /*{c-bup-background-end}*/); /* Opera 11.10+ */
+    background-image: linear-gradient( #711D6E /*{c-bup-background-start}*/, #5C185A /*{c-bup-background-end}*/);
+}
+
+.directions-popup h3
+{
+    font-weight: normal;
+    text-shadow: none;
+    padding: 10px;
+}
+
+/* Ajax loader */
+/*=====================================*/
+
+.ajax_overlay
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
+}
+
+.ajax_loader
+{
+    background: url("../Images/spinner_squares_circle.gif") no-repeat center center transparent;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Twitts */
+
+#twitter #jstweets > div
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #764A99 /*{a-bar-background-start}*/), to( #511281 /*{a-bar-background-end} */)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #764A99 /*{a-bar-background-start}*/, #511281 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #764A99 /*{a-bar-background-start}*/, #511281 /*{a-bar-background-end}*/); /* FF3.6 */
+    background-image: -ms-linear-gradient( #764A99 /*{a-bar-background-start}*/, #511281 /*{a-bar-background-end}*/); /* IE10 */
+    background-image: -o-linear-gradient( #764A99 /*{a-bar-background-start}*/, #511281 /*{a-bar-background-end}*/); /* Opera 11.10+ */
+    background-image: linear-gradient( #764A99 /*{a-bar-background-start}*/, #511281 /*{a-bar-background-end}*/);
+    border: 2px solid #AB89BB;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.illusions-link, #twitter #jstweets > div a, #twitter #jstweets > div a:visited
+{
+    color: #82DFDB;
+}
+
+.illusions-home-btn img
+{
+    zoom: 1.0;
+    -moz-transform: scale(1);
+}
+
+.illusions-home-btn:active img, .illusions-home-btn:focus img
+{
+    zoom: 0.85;
+    -moz-transform: scale(0.85);
+}
+

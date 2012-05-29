@@ -9,9 +9,9 @@
 <!--SCRIPTS-->
 <script type="text/javascript" src="Scripts/External/jquery.js"></script>
 <script type="text/javascript">
-//    $(document).bind("mobileinit", function () {
-//        $.mobile.page.prototype.options.addBackBtn = true;
-//    });
+    $(document).bind("mobileinit", function () {
+        $.mobile.page.prototype.options.addBackBtn = true;
+    });
 </script>
 <script type="text/javascript" src="Scripts/External/jquery.mobile-1.1.0.js"></script>
 <script type="text/javascript" src="photoswipe/klass.min.js"></script>
@@ -33,52 +33,51 @@
 <script type="text/javascript" src="Scripts/illusions-contacts.js"></script>
 <script type="text/javascript" src="Scripts/illusions-reserve.js"></script>
 <script type="text/javascript" src="Scripts/illusions-twitt.js"></script>
-<script type="text/javascript" src="Scripts/illusions-home.js"></script>
 <!--HOME PAGE-->
-<section id="loadData" data-role="page" class="load-data full-screen-background">
+<section id="loadData" data-role="page">
     <div class="uploader">
-        <h2>
-            Please, wait...</h2>
+        Please wait wile loading...
         <div class="upload-container">
         </div>
     </div>
 </section>
-<section id="homePage" data-role="page" class="main-page full-screen-background">
+<section id="homePage" data-role="page">
     <img style="z-index: -1; top: 0px; width: 100%;" src="css/images/logo.png" />
     <div class="content" data-role="content">
         <div id="mainMenu">
             <div>
-                <a href="#about" class="illusions-home-btn">
+                <a href="#about">
                     <img src="css/images/about.png" alt="About us" /></a>
             </div>
             <div>
-                <a href="#eventsList" class="illusions-home-btn">
+                <a href="#eventsList">
                     <img src="css/images/events.png" alt="Events" /></a>
             </div>
             <div>
-                <a href="#galleryList" class="illusions-home-btn">
+                <a href="#galleryList">
                     <img src="css/images/gallery.png" alt="Gallery" /></a>
             </div>
             <div class="clear-fix" style="width: 100%">
             </div>
             <div>
-                <a href="#reserve" class="illusions-home-btn">
+                <a href="#reserve">
                     <img src="css/images/reserve.png" alt="Reserve" /></a>
             </div>
             <div>
-                <a href="#contacts" class="illusions-home-btn">
+                <a href="#contacts">
                     <img src="css/images/contact.png" alt="Contact" />
                 </a>
             </div>
             <div>
-                <a href="#twitter" class="illusions-home-btn">
+                <a href="#twitter">
                     <img src="css/images/twitter.png" alt="Our location" /></a>
             </div>
         </div>
     </div>
+    <img style="z-index: -1; bottom: 0px; width: 100%;" src="css/images/background2_resize.png" />
 </section>
 <!--GALLERY LIST PAGE-->
-<section id="galleryList" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="galleryList" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Galleries</h1>
@@ -87,7 +86,7 @@
     </ul>
 </section>
 <!--GALLERY ENTRY PAGE-->
-<section id="galleryEntry" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="galleryEntry" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Gallery</h1>
@@ -96,7 +95,7 @@
     </ul>
 </section>
 <!--CONTACTS PAGE-->
-<section id="contacts" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="contacts" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Contact Us</h1>
@@ -104,11 +103,12 @@
     <div class="content" data-role="content" style="text-align: center;">
         <div id="map_square">
         </div>
-        <small style="margin-top: 5px;">Tap the map to view location in details. </small>
+        <small style="margin-top: 5px;">Tap the map to view location in details.
+        </small>
     </div>
 </section>
 <!--RESERVE PAGE-->
-<section id="reserve" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="reserve" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Reserve</h1>
@@ -137,7 +137,7 @@
     </div>
 </section>
 <!--RESERVE DIALOG PAGE-->
-<section id="reserveDialog" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="reserveDialog" data-role="page" data-add-back-btn="true">
     <div data-role="header">
         <h1>
             Reserved</h1>
@@ -151,7 +151,7 @@
     </div>
 </section>
 <!--EVENTS LIST PAGE-->
-<section id="eventsList" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="eventsList" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Events</h1>
@@ -162,7 +162,7 @@
     </div>
 </section>
 <!--EVENTS ENTRY PAGE-->
-<section id="eventEntry" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="eventEntry" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Events
@@ -179,18 +179,20 @@
     </div>
 </section>
 <!--TWITTER PAGE-->
-<section data-role="page" id="twitter" data-add-back-btn="true" class="full-screen-background">
+<section data-role="page" id="twitter" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             Our latest twits</h1>
     </header>
     <div class="content" data-role="content">
-        <div id="jstweets">
+        <div class="twitter" id="jstweets">
+            <h1>
+                Twitter Feed with jQuery</h1>
         </div>
     </div>
 </section>
 <!--MAP DESCRIPTION PAGE-->
-<section data-role="page" data-fullscreen="true" id="page-map" class="full-screen-background">
+<section data-role="page" data-fullscreen="true" id="page-map">
     <div data-role="content" id="map-content">
         <div id="map_canvas">
         </div>
@@ -222,7 +224,7 @@
     </div>
 </section>
 <!--ABOUT US PAGE-->
-<section id="about" data-role="page" data-add-back-btn="true" class="full-screen-background">
+<section id="about" data-role="page" data-add-back-btn="true">
     <header data-role="header">
         <h1>
             About Us</h1>
@@ -233,7 +235,25 @@
     </div>
 </section>
 <script type="text/javascript">
-    $('#loadData').live('pageshow', function () {
-       setTimeout('$.illusions.init();', 3000);
-    });
+    (function ($) {
+        //$('#loadData').live('pagebeforeshow', function () {
+        $.illusions.init();
+        // });
+<<<<<<< .mine
+=======
+        $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=IllusionsLI&count=20&callback=?",
+        function (data) {
+            $.each(data, function (i, item) {
+                var ct = item.text;
+                ct = ct.replace(/http:\/\/\S+/g, '<a href="$&" target="_blank">$&</a>');
+                ct = ct.replace(/\s(@)(\w+)/g, ' @<a href="http://twitter.com/$2" target="_blank">$2</a>');
+                $("#jstweets").append('<div>' + ct + '</div>');
+            });
+        });
+>>>>>>> .r22
+    })(jQuery);
+    
+    
+   
+
 </script>

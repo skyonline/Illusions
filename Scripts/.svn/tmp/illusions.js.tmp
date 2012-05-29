@@ -1,0 +1,62 @@
+
+(function ($) {
+    $.illusions = $.illusions || {};
+
+    $.extend($.illusions, {
+        options:
+            {
+                requests: 5,
+                requestCompleted: 0
+            },
+
+        loadDataInit: function (options) {
+            $.extend($.illusions.options, options);
+            $('#loadData').live('pageshow', function () {
+                $('#loadData .upload-container').progressbar({ value: 0 });
+<<<<<<< .mine
+                var twitterList = new $.dataload({ loadUrl: 'http://twitter.com/statuses/user_timeline.json?screen_name=IllusionsLI&count=20&callback=?',
+                    pageId: 'twitter',
+                    progressOffset: 50
+                });
+                var contactsLoad = new $.dataload({ loadUrl: 'http://illusionsli.com/index.php?id=205&docid=175',
+                    pageId: 'contacts',
+                    progressOffset: 0
+                });
+=======
+//                var contactsLoad = new $.dataload({ loadUrl: 'http://illusionsli.com/index.php?id=205&docid=175',
+//                    pageId: 'contacts',
+//                    progressOffset: 0
+//                });
+>>>>>>> .r22
+                var eventsLoad = new $.dataload({ loadUrl: 'http://illusionsli.com/index.php?id=201&docid=186',
+                    pageId: 'eventsList',
+                    progressOffset: 25,
+                    loadCallback: $.illusions.events.list.eventListLoadCallBack
+                });
+                var aboutUsLoad = new $.dataload({ loadUrl: 'http://illusionsli.com/index.php?id=205&docid=1',
+                    pageId: 'about',
+                    progressOffset: 50
+                });
+                var galleryList = new $.dataload({ loadUrl: 'http://www.illusionsli.com/index.php?id=201&docid=203',
+                    pageId: 'galleryList',
+                    progressOffset: 50,
+                    loadCallback: $.illusions.gallery.list.galleryListLoadCallback
+                });
+               
+            });
+        },
+
+        init: function () {
+            $.illusions.loadDataInit();
+            $.illusions.maps.init({ lat: 40.7, long: -73.3 });
+            $.illusions.contacts.init();
+            $.illusions.about.init();
+            $.illusions.events.entry.init();
+            $.illusions.events.list.init();
+            $.illusions.gallery.list.init();
+            $.illusions.reserve.init();
+            $.illusions.twitt.init();
+          
+        }
+    });
+})(jQuery);
